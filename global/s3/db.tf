@@ -1,5 +1,5 @@
 
-/*
+
 resource "aws_dynamodb_table" "terraform_locks" {
 
     name = "terraform-up-and-run-running-locks"
@@ -11,4 +11,3 @@ resource "aws_dynamodb_table" "terraform_locks" {
     }
   
 }
-*/
