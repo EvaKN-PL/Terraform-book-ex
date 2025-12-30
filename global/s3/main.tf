@@ -1,3 +1,4 @@
+/*
 terraform {
   backend "s3" {
     bucket = "bucket-versioning-tfstate-running"
@@ -8,6 +9,7 @@ terraform {
     
   }
 }
+*/
 
 
 

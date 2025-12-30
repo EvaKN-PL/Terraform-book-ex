@@ -3,9 +3,3 @@ output "s3_bucket_arn" {
     description = "Number ARN of S3 bucket"
   
 }
-
-output "dynamodb_table_name" {
-    value = aws_dynamodb_table.terraform_locks.name
-    description = "Name of DB table"
-  
-}
