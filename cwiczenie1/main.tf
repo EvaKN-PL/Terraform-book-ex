@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "bucket-versioning-tfstate"
+    bucket = "bucket-versioning-tfstate-running"
     key = "global/s3/terraform.tfstate"
     region = "eu-central-1"
     dynamodb_table = "terraform-up-and-run-running-locks"
@@ -19,7 +19,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "my_bucket" {
-    bucket = "bucket-versioning-tfstate"
+    bucket = "bucket-versioning-tfstate-running"
 
     lifecycle {
       prevent_destroy = true
