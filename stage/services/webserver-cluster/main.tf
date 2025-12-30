@@ -1,4 +1,4 @@
-/*
+
 terraform {
   backend "s3" {
     bucket = "bucket-versioning-tfstate-running"
@@ -19,4 +19,3 @@ resource "aws_instance" "example" {
     instance_type = "t2.micro"
   
 }
-*/

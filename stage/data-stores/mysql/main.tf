@@ -1,4 +1,4 @@
-/*
+
 terraform {
   backend "s3" {
     bucket = "bucket-versioning-tfstate-running"
@@ -27,4 +27,3 @@ resource "aws_db_instance" "example" {
     password = var.db_password
   
 }
-*/
