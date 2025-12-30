@@ -1,16 +1,13 @@
 terraform {
   backend "s3" {
     bucket = "bucket-versioning-tfstate-running"
-    key = "workspace-example/terraform.tfstate"
+    key = "stage/services/webserver-cluster/terraform.tfstate"
     region = "eu-central-1"
     dynamodb_table = "terraform-up-and-run-running-locks"
     encrypt = true
     
   }
 }
-
-
-
 provider "aws" {
     region = "eu-central-1"
   
