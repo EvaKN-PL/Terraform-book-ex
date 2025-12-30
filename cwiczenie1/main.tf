@@ -32,9 +32,3 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "encrypt" {
     }
   
 }
-
-resource "aws_s3_bucket_acl" "private" {
-    bucket = aws_s3_bucket.my_bucket.id
-    acl = "private"
-  
-}
